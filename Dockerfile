@@ -17,6 +17,7 @@ apt-get install -y \
     libmp3lame-dev \
     libx264-dev \
     libzvbi-dev \
+    openssl \
     wget && \
 wget https://github.com/SlavaSubotskiy/docker-recoder/raw/master/ffmpeg-x264-faac-mp3-zvbi_1-1_amd64.deb -O /tmp/ffmpeg.deb && \
 dpkg -i /tmp/ffmpeg.deb && \

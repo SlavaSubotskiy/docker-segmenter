@@ -27,4 +27,4 @@ apt-get clean && \
 rm -rf /var/lib/apt/lists/* && \
 rm -f /tmp/ffmpeg.deb
 
-#ENTRYPOINT udpxy -a ${LISTEN_IP:-0.0.0.0} -p ${LISTEN_PORT:-8080} -c ${MAX_CLIENTS:-10} -T -m ${MCAST_IFACE:-eth1}
+ENTRYPOINT sh /shared/segmenter ${CH_ID:-3} ${CH_ADDR:-228.0.0.4:1234} ${SRC_VLAN_ID:-335} ${ENCRYPTION:-1}

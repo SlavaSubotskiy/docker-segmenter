@@ -27,4 +27,4 @@ apt-get clean && \
 rm -rf /var/lib/apt/lists/* && \
 rm -f /tmp/ffmpeg.deb
 
-ENTRYPOINT sh /shared/segmenter ${CH_ID:-3} ${CH_ADDR:-228.0.0.4:1234} ${SRC_VLAN_ID:-335} ${ENCRYPTION:-1}
+ENTRYPOINT sh /shared/segmenter ${CH_ID:-1} ${CH_ADDR:-225.0.0.5:2222} ${SRC_VLAN_ID:-7} ${ENCRYPTION:-1}
